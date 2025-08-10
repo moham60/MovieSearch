@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+.Home,.details{
+    background-image: url('./assets/Images/movie-background-collage.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
