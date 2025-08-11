@@ -2,7 +2,6 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import SearchBar from "../Components/SearchBar";
 import MovieList from "../Components/MovieList";
-import { useLocation } from "react-router-dom";
 
 export default function Home() {
   const [Title, setTitle] = useState("");
@@ -45,7 +44,7 @@ export default function Home() {
   },[])
   return (
     <section className="Home px-2 py-10  min-h-screen">
-      <h1 className="text-white text-center text-2xl mb-2">Movie Search App</h1>
+      <h1 className="text-white text-center sm:text-2xl mb-2">Movie Search App</h1>
       <div className="search ">
         <SearchBar setTitle={setTitle} Title={Title} />
       </div>

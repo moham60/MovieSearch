@@ -40,8 +40,10 @@
           <FaArrowLeft size={15} />
         </Link>
 
-        <div className="title text-center text-2xl my-4 sm:text-4xl font-bold">
-          <h1 className="text-white  ">Details Movie Page</h1>
+        <div className="title text-center ">
+          <h1 className="text-white sm:text-2xl mb-2 font-bold  ">
+            Details Movie Page
+          </h1>
         </div>
         {movieDetails && !isLoading && (
           <div className=" flex flex-col my-4  sm:flex-row  items-center lg:items-start ">

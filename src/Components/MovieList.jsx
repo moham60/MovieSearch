@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import MovieCard from "./MovieCard";
-import cimaImge from "../assets/Images/movie.png"
+import cimaImge from "../assets/Images/movie.webp"
 import Loader from "./Loader";
 export default function MovieList({movieList,isLoading,isError}) {
   return (
@@ -14,7 +14,7 @@ export default function MovieList({movieList,isLoading,isError}) {
       {movieList == null &&!isLoading&& !isError&& (
         <div className="flex flex-col items-center justify-center gap-4">
           <h3 className="text-white text-3xl sm:text-6xl">No Movie Found</h3>
-          <img src={cimaImge} className="w-35 mx-auto block" alt="cimaImge" />
+          <img src={cimaImge} className="w-35 h-35 mx-auto block" alt="cimaImge" />
         </div>
       )}
       {isError && <p className="text-red-600 text-center text-2xl">{isError}</p>}
